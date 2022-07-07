@@ -9,7 +9,7 @@ import io.cucumber.testng.CucumberOptions;
 		features = { "./src/test/resources/features" },
 		glue = "stepdefinitions",
 		monochrome = true, dryRun = false,
-		tags = "@FirstCase",
+		tags = "",
 		plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},publish=true
 )
 

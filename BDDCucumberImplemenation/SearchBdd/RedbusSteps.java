@@ -10,6 +10,7 @@ import io.cucumber.java.en.When;
 public class RedBusStepDef {
 
 	WebDriver driver;
+	
 
     @Given("^User have search bus on red bus home page$")
     public void User_have_search_bus_on_red_bus_home_page() {

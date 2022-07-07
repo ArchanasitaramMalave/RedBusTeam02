@@ -13,12 +13,7 @@ import io.cucumber.testng.CucumberOptions;
 		plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},publish=true
 )
 
-public class RunnerFile extends AbstractTestNGCucumberTests {
+public class RunnerFile  {
 
-	@Override
-	@DataProvider(parallel = false)
-	public Object[][] scenarios()
-	{
-		return super.scenarios();
-	}
+	
 }

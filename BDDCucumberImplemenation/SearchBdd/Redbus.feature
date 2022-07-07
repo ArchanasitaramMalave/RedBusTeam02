@@ -1,17 +1,22 @@
-Feature: Performing Actions on Redbus Application
-  I want to use this template for my feature file
+Feature: Search in Red Bus
+Scenario: Successful Search red bus 
+    Given User have search bus on red bus home page
+    When source  User search for a bus withname and destination name and date
 
-  @FirstCase
-  Scenario Outline: Selecting a product from Sauce Demo Application
-    Given Launch the Redbus Application
-    Then Enter From City as "<From City>"
-    Then Enter To City as "<To City>"
-    Then Search for the Buses
-    Then Select The Seats
-    Then Select the PickUp Point
-    Then Select the Drop Point
-    Then Proceed To Booking and enter the Details
-
-    Examples: 
-      | From City | To City |
-      | Bangalore | Chennai |
+    Then User able to see buses
+   | Pune | Mumbai | Tue, 5 July |
+    
+ Scenario: Successful apply filters
+    Given User can apply filters in sort and filter option
+    When  User is select AC filter 
+    Then  User is able to see AC buses
+    
+ Scenario: Successful view seat
+    Given User can select available seat
+    When  User click on available seat
+    Then User navigate to boarding point and dropping point page
+    
+Scenario: Successfully proceed to book
+    Given User have to select boarding point and dropping point
+    When User click on procced to book button 
+    Then User is able to navigate passanger details page and proceed to pay button

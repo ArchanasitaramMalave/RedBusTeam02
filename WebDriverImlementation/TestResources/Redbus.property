@@ -1,0 +1,9 @@
+ChromeDriver=C:\\Users\\ARMALVE\\Desktop\\selenium\\selenum jars\\chromedriver_win32\\chromedriver.exe
+url=https://www.redbus.in
+From=src
+To=dest
+Date=//td[@class='wd day']
+Button=//button[.='Search Buses']
+Before=//label[@title='Before 6 am']
+After=//label[@title='After 6 pm']
+ViewSeats=button view-seats fr

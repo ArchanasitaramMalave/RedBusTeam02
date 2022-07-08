@@ -1,6 +1,7 @@
 Feature: Search in Red Bus
-Scenario: Successful Search red bus 
+
 @RegressionTest
+Scenario: Successful Search red bus 
     Given User have search bus on red bus home page
     When source  User search for a bus withname and destination name and date
 

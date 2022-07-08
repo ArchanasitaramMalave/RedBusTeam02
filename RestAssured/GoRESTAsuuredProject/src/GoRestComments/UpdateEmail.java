@@ -27,7 +27,7 @@ public class UpdateEmail {
 	        System.out.println("Response=>" + response.prettyPrint());
 	        
 	        
-	        Assert.assertEquals(403,response.getStatusCode());
+	        Assert.assertEquals(201,response.getStatusCode());
 	        System.out.println("The status code is :"+response.getStatusCode());
 		}
 

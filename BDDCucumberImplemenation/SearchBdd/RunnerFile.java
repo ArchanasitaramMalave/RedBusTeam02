@@ -1,19 +1,21 @@
-package runner;
+package RedBusBDD;
 
-import org.testng.annotations.DataProvider;
+import org.junit.runner.RunWith;
 
-import io.cucumber.testng.AbstractTestNGCucumberTests;
-import io.cucumber.testng.CucumberOptions;
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
 
-@CucumberOptions (
-		features = { "./src/test/resources/features" },
-		glue = "stepdefinitions",
+@RunWith(Cucumber.class) 
+@CucumberOptions(plugin = {"pretty", "html:target/Destination"})
+features = { "/BDDAutomationPractice/src/test/java/RedBusBDD/Search.feature" },
+		glue = "SearchStepDef",
 		monochrome = true, dryRun = false,
-		tags = "@parameterization",
-		plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},publish=true
-)
+		tags = "@RegressionTest")
+		
 
-public class RunnerFile  {
 
-	
+
+public class SearchRunner {
+
 }
+

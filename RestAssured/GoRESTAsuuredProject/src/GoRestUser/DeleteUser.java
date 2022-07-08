@@ -23,7 +23,7 @@ public class DeleteUser {
         
         
         
-        Assert.assertEquals(200,response.getStatusCode());
+        Assert.assertEquals(204,response.getStatusCode());
         System.out.println("The status code is"+ response.getStatusCode());
 	}
 

@@ -1,4 +1,4 @@
-package stepdefinitions;
+package RedBusBDD;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -7,7 +7,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class RedBusStepDef {
+public class SearchStepDef {
 
 	WebDriver driver;
 	
@@ -15,7 +15,7 @@ public class RedBusStepDef {
     @Given("^User have search bus on red bus home page$")
     public void User_have_search_bus_on_red_bus_home_page() {
 
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\SKANHE\\Desktop\\Selenium\\Selenium jar\\chromedriver_win32\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\ARMALVE\\Desktop\\Selenium\\Selenium jar\\chromedriver_win32\\chromedriver.exe");
         driver=new ChromeDriver();
         driver.get("https://www.redbus.in/");}
     
